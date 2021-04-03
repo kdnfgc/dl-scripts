@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo eopkg install neofetch safeeyes redshift kitty adwaita-icon-theme plank vim neovim qt5ct vscode dash tmux
+sudo eopkg install neofetch safeeyes redshift kitty adwaita-icon-theme plank vim neovim qt5ct vscode dash tmux zsh zsh-autosuggestions zsh-syntax-highlighting
