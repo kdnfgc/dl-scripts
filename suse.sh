@@ -5,7 +5,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #Installs most utilities
-sudo zypper install stow zsh dash safeeyes redshift redshift-gtk kitty neovim gimp inkscape qt5ct qemu libvirt ovmf-tools virt-manager dnsmasq rust gcc make curl
+sudo zypper install stow zsh dash safeeyes redshift redshift-gtk kitty neovim gimp inkscape qt5ct qemu libvirt ovmf-tools virt-manager dnsmasq rust gcc make curl hte
 
 #Adds and installs Brave and VSCode
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
