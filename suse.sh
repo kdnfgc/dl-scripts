@@ -18,7 +18,7 @@ sudo zypper install brave-browser code
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow geany kitty vim nvim p10klx pic plank qt5ct zsh
+stow geany kitty vim nvim p10klx pic plank qt5ct zsh profile
 
 #Adds Nerd Fonts
 cd root/root/usr/share/fonts
