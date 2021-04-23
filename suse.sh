@@ -34,4 +34,3 @@ stow geany kitty vim nvim p10klx pic plank qt5ct zsh profile
 cd root/root/usr/share/fonts
 sudo cp -r truetype /usr/share/fonts
 
-
