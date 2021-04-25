@@ -9,7 +9,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 #Installs Most Utils
 sudo brew install stow vim neovim dash cask
-sudo brew cask install kitty gimp inkscape libreoffice
+sudo brew cask install kitty gimp inkscape libreoffice android-studio
 
 #Adds My Dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
