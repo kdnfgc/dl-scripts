@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo zypper in qemu libvirt ovmf-tools virt-manager dnsmasq 
+sudo zypper in qemu libvirt ovmf-tools virt-manager dnsmasq kdenlive discord
