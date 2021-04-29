@@ -7,10 +7,13 @@ sudo eopkg it stow zsh dash make brave safeeyes redshift kitty adwaita-icon-them
 sudo eopkg rm firefox
 cd
 
+#Removes default profile
+rm .profile
+
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow kitty vim nvim p10kux pic plank qt5ct zsh profilepfetch
+stow kitty vim nvim p10kux pic plank qt5ct zsh profile
 
 #Adds Nerd Fonts
 cd root/root/usr/share/fonts
