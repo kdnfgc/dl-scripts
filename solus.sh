@@ -40,4 +40,4 @@ cd
 sudo rm -r gruvbox-material-gtk
 
 #Removes breeze icon
-sudo eopkg rm breeze-cursor-theme
+sudo eopkg rm breeze-cursor-theme mate-terminal
