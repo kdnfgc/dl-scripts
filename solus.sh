@@ -3,6 +3,10 @@
 #Installs most utils
 sudo eopkg in brave safeeyes redshift kitty adwaita-icon-theme plank vim neovim qt5ct dash zsh rustup 
 
+#Removes Firefox
+sudo eopkg rm firefox
+
 #Adds Vim-Plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+

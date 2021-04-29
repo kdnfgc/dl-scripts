@@ -32,7 +32,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow geany kitty vim nvim p10klx pic plank qt5ct zsh profile
+stow kitty vim nvim p10klx pic plank qt5ct zsh profile
 
 #Removes unnecessary branding
 sudo zypper rm yast2-qt-branding-openSUSE
