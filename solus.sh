@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Installs most utils
-sudo eopkg it stow zsh dash make brave safeeyes redshift kitty adwaita-icon-theme plank vim neovim gimp inkscape qt5ct rustup 
+sudo eopkg it stow zsh dash make brave safeeyes redshift kitty adwaita-icon-theme plank vim neovim gimp inkscape qt5ct rustup gcc g++ gradle dracut prelink 
 
 #Removes Firefox
 sudo eopkg rm firefox
