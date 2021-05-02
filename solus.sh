@@ -8,7 +8,7 @@ sudo eopkg rm firefox
 cd
 
 #Removes default profile
-rm .profile
+sudo rm .profile
 
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
@@ -19,6 +19,14 @@ stow kitty vim nvim p10kux pic plank qt5ct zsh profile
 cd root/root/usr/share/fonts
 sudo cp -r truetype /usr/share/fonts
 cd
+
+#Adds halmak layout
+cd .dotfiles/root/root/usr/share/X11/xkb
+sudo cp -r rules /usr/share/X11/xkb
+sudo cp -r symbols /usr/share/X11/xkb
+sudo cp -r types /usr/share/X11/xkb
+cd
+
 
 #Adds Vim-Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
