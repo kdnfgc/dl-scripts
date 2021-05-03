@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Installs most utils
-sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo
+sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo gammastep
 
 #Installs brave
 sudo dnf install -y dnf-plugins-core
