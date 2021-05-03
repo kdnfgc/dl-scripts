@@ -36,14 +36,15 @@ sudo cp -r rules /usr/share/X11/xkb
 sudo cp -r symbols /usr/share/X11/xkb
 sudo cp -r types /usr/share/X11/xkb
 cd
+cd .dotfiles/root/root/etc/X11
+sudo cp -r xorg.conf.d /etc/X11/
+cd
 
 
 #Adds Vim-Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-#Make zsh my default shell
-sudo chsh -s /usr/bin/zsh
 
 #Installs pfetch
 git clone https://github.com/dylanaraps/pfetch.git
@@ -62,6 +63,10 @@ sudo rm -r gruvbox-material-gtk
 
 #Removes mate-terminal
 sudo dnf rm -y mate-terminal
+
+
+#Make zsh my default shell
+sudo chsh -s $(which zsh)
 
 #Restarts system
 sudo reboot
