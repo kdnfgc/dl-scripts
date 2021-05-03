@@ -16,7 +16,7 @@ sudo rm .profile
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow kitty vim nvim p10kux pic plank qt5ct zsh profile
+stow kitty vim nvim p10kux pic plank qt5ct zsh profile xfce4
 cd
 
 #Adds Nerd Fonts

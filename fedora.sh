@@ -1,5 +1,30 @@
 #!/bin/sh
 
+#Installs most utils
+sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo
+
+#Installs brave
+sudo dnf install dnf-plugins-core
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install brave-browser
+
+#Installs safeeyes
+sudo dnf install libappindicator-gtk3 python3-psutil cairo-devel python3-devel gobject-introspection-devel cairo-gobject-devel
+sudo pip3 install safeeyes
+sudo gtk-update-icon-cache /usr/share/icons/hicolor
+
+#Removes firefox
+sudo dnf rm firefox thunderbird
+
+#Removes default profile
+sudo rm .profile
+
+#Adds my dotfiles
+git clone https://github.com/kdnfgc/.dotfiles.git
+cd .dotfiles
+stow kitty vim nvim p10kux pic plank qt5ct zsh profile
+
 #Adds Nerd Fonts
 cd root/root/usr/share/fonts
 sudo cp -r truetype /usr/share/fonts
@@ -17,6 +42,9 @@ cd
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+#Make zsh my default shell
+sudo chsh -s /usr/bin/zsh
+
 #Installs pfetch
 git clone https://github.com/dylanaraps/pfetch.git
 cd pfetch
@@ -31,3 +59,9 @@ sudo cp -r icons/* /usr/share/icons
 sudo cp -r themes/* /usr/share/themes
 cd
 sudo rm -r gruvbox-material-gtk
+
+#Removes mate-terminal
+sudo dnf rm -y mate-terminal
+
+#Restarts system
+sudo reboot
