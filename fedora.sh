@@ -4,18 +4,18 @@
 sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo
 
 #Installs brave
-sudo dnf install dnf-plugins-core
+sudo dnf install -y dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install brave-browser
+sudo dnf install -y brave-browser
 
 #Installs safeeyes
-sudo dnf install libappindicator-gtk3 python3-psutil cairo-devel python3-devel gobject-introspection-devel cairo-gobject-devel
+sudo dnf install -y libappindicator-gtk3 python3-psutil cairo-devel python3-devel gobject-introspection-devel cairo-gobject-devel
 sudo pip3 install safeeyes
 sudo gtk-update-icon-cache /usr/share/icons/hicolor
 
 #Removes firefox
-sudo dnf rm firefox thunderbird
+sudo dnf rm -y firefox thunderbird
 
 #Removes default profile
 sudo rm .profile
