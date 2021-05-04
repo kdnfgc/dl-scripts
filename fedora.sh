@@ -1,7 +1,8 @@
 #!/bin/sh
 
 #Installs most utils
-sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo gammastep
+sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo redshift 
+deja-dup evolution
 
 #Installs brave
 sudo dnf install -y dnf-plugins-core
@@ -66,7 +67,7 @@ sudo dnf rm -y mate-terminal
 
 
 #Make zsh my default shell
-sudo chsh -s $(which zsh)
+sudo chsh -s /bin/zsh
 
 #Restarts system
 sudo reboot
