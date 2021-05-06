@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#Redirects to home directory
+cd
+
 #Installs most utils
 sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo redshift 
 deja-dup evolution
@@ -44,8 +47,7 @@ cd
 
 #Adds Vim-Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #Installs pfetch
 git clone https://github.com/dylanaraps/pfetch.git
@@ -64,7 +66,6 @@ sudo rm -r gruvbox-material-gtk
 
 #Removes mate-terminal
 sudo dnf rm -y mate-terminal
-
 
 #Make zsh my default shell
 sudo chsh -s /bin/zsh
