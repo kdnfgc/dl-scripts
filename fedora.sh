@@ -4,8 +4,8 @@
 cd
 
 #Installs most utils
-sudo dnf install -y stow zsh dash kitty plank neovim python3-neovim gimp inkscape qt5ct rust cargo redshift 
-deja-dup evolution
+sudo dnf install -y stow zsh dash kitty latte-dock neovim python3-neovim inkscape qt5ct rust cargo kbackup
+
 
 #Installs brave
 sudo dnf install -y dnf-plugins-core
