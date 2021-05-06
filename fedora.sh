@@ -57,15 +57,15 @@ sudo make install
 cd
 
 #Adds Gruvbox-Material theme
-git clone https://github.com/sainnhe/gruvbox-material-gtk.git
-cd gruvbox-material-gtk
-sudo cp -r icons/* /usr/share/icons
-sudo cp -r themes/* /usr/share/themes
-cd
-sudo rm -r gruvbox-material-gtk
+#git clone https://github.com/sainnhe/gruvbox-material-gtk.git
+#cd gruvbox-material-gtk
+#sudo cp -r icons/* /usr/share/icons
+#sudo cp -r themes/* /usr/share/themes
+#cd
+#sudo rm -r gruvbox-material-gtk
 
 #Removes mate-terminal
-sudo dnf rm -y mate-terminal
+#sudo dnf rm -y mate-terminal
 
 #Make zsh my default shell
 sudo chsh -s /bin/zsh
