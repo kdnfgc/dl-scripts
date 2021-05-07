@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install stow zsh dash kitty latte-dock vim neovim p7zip libreoffice krita kbackup
+sudo apt install stow zsh dash kitty latte-dock vim neovim krita kbackup
 
 #Installs brave
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
