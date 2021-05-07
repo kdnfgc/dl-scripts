@@ -40,10 +40,9 @@ sudo cp -r rules /usr/share/X11/xkb
 sudo cp -r symbols /usr/share/X11/xkb
 sudo cp -r types /usr/share/X11/xkb
 cd
-cd .dotfiles/root/root/etc/X11
-sudo cp -r xorg.conf.d /etc/X11/
+cd .dotfiles/root/root/etc/X11/xorg.conf.d
+sudo cp 00-keyboard.conf /etc/X11/xorg.conf.d
 cd
-
 
 #Adds Vim-Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \

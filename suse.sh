@@ -2,7 +2,7 @@
 
 
 #Installs most utilities
-sudo zypper in stow zsh dash safeeyes redshift redshift-gtk kitty neovim gimp inkscape qt5ct rust gcc make curl hte 
+sudo zypper in stow zsh dash safeeyes kitty latte-dock neovim krita inkscape  rust gcc make curl hte kbackup
 
 #Adds and installs Brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
@@ -10,13 +10,16 @@ sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave
 sudo zypper refresh
 sudo zypper in brave-browser 
 
+#Removes firefox
+sudo zypper rm firefox
+
 #Removes default profile
 sudo rm .profile
 
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow kitty vim nvim p10kux pic plank qt5ct zsh profile xfce4
+stow kitty vim nvim p10kux pic zsh profile
 cd
 
 #Adds Nerd Fonts
@@ -46,12 +49,12 @@ sudo make install
 cd
 
 #Adds Gruvbox-Material theme
-git clone https://github.com/sainnhe/gruvbox-material-gtk.git
-cd gruvbox-material-gtk
-sudo cp -r icons/* /usr/share/icons
-sudo cp -r themes/* /usr/share/themes
-cd
-sudo rm -r gruvbox-material-gtk
+#git clone https://github.com/sainnhe/gruvbox-material-gtk.git
+#cd gruvbox-material-gtk
+#sudo cp -r icons/* /usr/share/icons
+#sudo cp -r themes/* /usr/share/themes
+#cd
+#sudo rm -r gruvbox-material-gtk
 
 
 #Removes unnecessary branding
