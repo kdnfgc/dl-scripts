@@ -2,7 +2,7 @@
 
 
 #Installs most utilities
-sudo zypper in stow zsh dash safeeyes kitty latte-dock neovim krita inkscape  rust gcc make curl hte kbackup
+sudo zypper in stow zsh dash safeeyes kitty latte-dock neovim krita inkscape rust gcc make curl hte kbackup
 
 #Adds and installs Brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
@@ -60,6 +60,3 @@ cd
 #Removes unnecessary branding
 sudo zypper rm yast2-qt-branding-openSUSE
 sudo zypper al yast2-qt-branding-openSUSE
-
-
-
