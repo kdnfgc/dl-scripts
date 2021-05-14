@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#Change directory to home
+cd
 
 #Installs most utilities
 sudo zypper in stow zsh dash safeeyes kitty latte-dock neovim krita inkscape rust gcc make curl hte kbackup
@@ -32,6 +34,8 @@ cd .dotfiles/root/root/usr/share/X11/xkb
 sudo cp -r rules /usr/share/X11/xkb
 sudo cp -r symbols /usr/share/X11/xkb
 sudo cp -r types /usr/share/X11/xkb
+cd .dotfiles/root/root/etc/X11/xorg.conf.d
+sudo cp 00-keyboard.conf /etc/X11/xorg.conf.d
 cd
 
 #Adds Vim-Plug
@@ -49,12 +53,12 @@ sudo make install
 cd
 
 #Adds Gruvbox-Material theme
-#git clone https://github.com/sainnhe/gruvbox-material-gtk.git
-#cd gruvbox-material-gtk
-#sudo cp -r icons/* /usr/share/icons
-#sudo cp -r themes/* /usr/share/themes
-#cd
-#sudo rm -r gruvbox-material-gtk
+git clone https://github.com/sainnhe/gruvbox-material-gtk.git
+cd gruvbox-material-gtk
+sudo cp -r icons/* /usr/share/icons
+sudo cp -r themes/* /usr/share/themes
+cd
+sudo rm -r gruvbox-material-gtk
 
 
 #Removes unnecessary branding
