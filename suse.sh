@@ -62,5 +62,5 @@ sudo rm -r gruvbox-material-gtk
 
 
 #Removes unnecessary branding
-sudo zypper rm yast2-qt-branding-openSUSE xterm 
-sudo zypper al yast2-qt-branding-openSUSE firefox xterm
+sudo zypper rm yast2-qt-branding-openSUSE git-gui
+sudo zypper al yast2-qt-branding-openSUSE firefox git-gui
