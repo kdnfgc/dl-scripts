@@ -4,16 +4,19 @@
 cd
 
 #Installs most utilities
-sudo zypper in stow zsh dash safeeyes kitty latte-dock neovim krita inkscape rust gcc make curl hte kbackup
+sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell evolution evolution-plugin-rss deja-dup gnome-characters gnome-screenshot gnome-session-wayland 
 
 #Adds and installs Brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
+sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode 
 sudo zypper refresh
-sudo zypper in brave-browser 
+sudo zypper in brave-browser code
 
 #Removes firefox
 sudo zypper rm firefox
+cd
 
 #Removes default profile
 sudo rm .profile
@@ -22,7 +25,6 @@ sudo rm .profile
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
 stow kitty vim nvim p10kux pic zsh profile
-cd
 
 #Adds Nerd Fonts
 cd root/root/usr/share/fonts
@@ -64,3 +66,4 @@ sudo rm -r gruvbox-material-gtk
 #Removes unnecessary branding
 sudo zypper rm yast2-qt-branding-openSUSE git-gui
 sudo zypper al yast2-qt-branding-openSUSE firefox git-gui
+
