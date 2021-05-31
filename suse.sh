@@ -6,6 +6,9 @@ cd
 #Installs most utilities
 sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell evolution evolution-plugin-rss deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade 
 
+#Adds flatpak repo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 #Adds and installs Brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
