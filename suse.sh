@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell evolution evolution-plugin-rss deja-dup gnome-characters gnome-screenshot gnome-session-wayland 
+sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell evolution evolution-plugin-rss deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade flatpak-zsh-completion 
 
 #Adds and installs Brave
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
