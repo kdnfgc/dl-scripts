@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell evolution evolution-plugin-rss deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade 
+sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl gnome-photos evolution evolution-plugin-rss deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade 
 
 #Adds flatpak repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
