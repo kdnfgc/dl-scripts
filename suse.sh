@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl gnome-photos deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade docker yast2-docker zypper-docker docker-machine-drivers-kvm2 gnome-calendar gnome-contacts gnome-dictionary gnome-weather -y 
+sudo zypper in kitty stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade docker yast2-docker zypper-docker docker-machine-drivers-kvm2 gnome-calendar gnome-contacts gnome-dictionary gnome-weather -y 
 
 
 #Adds and installs Brave and VSCode
