@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in kitty stow zsh dash safeeyes neovim gimp inkscape rust gcc make curl shotwell deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade docker yast2-docker zypper-docker docker-machine-drivers-kvm2 gnome-calendar gnome-contacts gnome-dictionary gnome-weather -y 
+sudo zypper in kitty stow zsh dash safeeyes neovim gimp inkscape rust gcc make clang ninja gtk3-devel curl shotwell deja-dup gnome-characters gnome-screenshot gnome-session-wayland gnome-builder glade docker yast2-docker zypper-docker docker-machine-drivers-kvm2 gnome-calendar gnome-contacts gnome-dictionary gnome-weather -y 
 
 
 #Adds and installs Brave and VSCode
@@ -12,8 +12,11 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
 sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode 
-sudo zypper refresh
-sudo zypper in brave-browser code
+sudo zypper addrepo --refresh https://download.opensuse.org/repositories/system:/snappy/openSUSE_Tumbleweed snappy
+sudo zypper --gpg-auto-import-keys refresh
+sudo zypper dup --from snappy
+sudo zypper in brave-browser code snapd
+
 
 #Removes firefox
 sudo zypper rm firefox
