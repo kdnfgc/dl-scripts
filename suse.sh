@@ -12,10 +12,8 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
 sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode 
-sudo zypper addrepo --refresh https://download.opensuse.org/repositories/system:/snappy/openSUSE_Tumbleweed snappy
 sudo zypper --gpg-auto-import-keys refresh
-sudo zypper dup --from snappy
-sudo zypper in brave-browser code snapd
+sudo zypper in brave-browser code 
 
 
 #Removes firefox
