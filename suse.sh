@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in kitty stow zsh dash neovim gnome-screenshot gnome-session-wayland  -y 
+sudo zypper in kitty stow zsh dash neovim -y 
 
 
 #Adds and installs Brave and VSCode
