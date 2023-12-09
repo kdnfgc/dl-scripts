@@ -4,7 +4,7 @@
 cd
 
 #Installs most utils
-sudo dnf install -y stow zsh dash kitty latte-dock neovim python3-neovim inkscape qt5ct rust cargo kbackup
+sudo dnf install -y stow zsh dash kitty latte-dock neovim python3-neovim qt5ct rust cargo kbackup
 
 
 #Installs brave
