@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in kitty stow zsh dash neovim -y 
+sudo zypper in bitwarden discord steam git-core kitty stow zsh dash neovim -y 
 
 
 #Adds and installs Brave and VSCode
