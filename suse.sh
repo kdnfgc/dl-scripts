@@ -4,7 +4,7 @@
 cd
 
 #Installs most utilities
-sudo zypper in bitwarden discord steam kitty stow zsh dash neovim -y 
+sudo zypper in bitwarden discord steam stow zsh dash neovim -y 
 
 
 #Adds and installs Brave and VSCode
@@ -24,7 +24,7 @@ sudo rm .profile
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow kitty vim nvim p10kux pic zsh profile
+stow vim nvim p10kux pic zsh profile
 
 #Adds Nerd Fonts
 cd root/root/usr/share/fonts
@@ -64,6 +64,5 @@ cd
 
 
 #Removes unnecessary branding
-sudo zypper rm yast2-qt-branding-openSUSE git-gui
-sudo zypper al yast2-qt-branding-openSUSE firefox git-gui
+sudo zypper al firefox
 
