@@ -4,7 +4,7 @@
 cd
 
 #Installs most utils
-sudo dnf install -y stow zsh dash kitty latte-dock neovim python3-neovim qt5ct rust cargo kbackup
+sudo dnf install -y zsh dash vim-enhanced neovim python3-neovim qt5ct rust cargo kbackup
 
 
 #Installs brave
@@ -12,11 +12,6 @@ sudo dnf install -y dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install -y brave-browser
-
-#Installs safeeyes
-sudo dnf install -y libappindicator-gtk3 python3-psutil cairo-devel python3-devel gobject-introspection-devel cairo-gobject-devel
-sudo pip3 install safeeyes
-sudo gtk-update-icon-cache /usr/share/icons/hicolor
 
 #Removes firefox
 sudo dnf rm -y firefox thunderbird
@@ -27,7 +22,7 @@ sudo rm .profile
 #Adds my dotfiles
 git clone https://github.com/kdnfgc/.dotfiles.git
 cd .dotfiles
-stow kitty vim nvim p10kux pic plank qt5ct zsh profile mate
+stow vim nvim p10kux pic qt5ct zsh profile mate
 
 #Adds Nerd Fonts
 cd root/root/usr/share/fonts
@@ -48,12 +43,6 @@ cd
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-#Installs pfetch
-git clone https://github.com/dylanaraps/pfetch.git
-cd pfetch
-make
-sudo make install
-cd
 
 #Adds Gruvbox-Material theme
 #git clone https://github.com/sainnhe/gruvbox-material-gtk.git
